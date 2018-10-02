@@ -3,11 +3,19 @@
 class View {
 
   function __construct() {
-    echo 'This is the View<br />';
+
   }
 
-  public function render($name)
+  public function render($name, $noInclude = false)
   {
-    require 'views/' . $name . '.php';
+    if ($noInclude == true) {
+      require 'views/'. $name . '.php';
+    }
+    else {
+      require 'views/header.php';
+      require 'views/' . $name . '.php';
+      require 'views/footer.php';
+    }
+
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
 
 <div class="container">
-This is the Index page, welcome!
+This is the Help page, welcome!
 </div>
